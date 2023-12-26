@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+     width:100%;
+     min-height: 100vh;
+     --bgcolor: hsl(0, 0%, 98%)
+     --fontcolor: hsl(0, 0%, 98%)
+     font-family:"Nunito+Sans",sans-serif;
+
+}
+a,
+a:active,
+a:hover{
+    text-decoration: none;
+    color:inherit;
+    cursor: pointer;
+}

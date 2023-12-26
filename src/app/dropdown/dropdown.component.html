@@ -1,0 +1,17 @@
+  <div class="filteroptions">
+    <div class="filter" (click)="toggleOptions()">
+      <span>Filter By Region</span>
+      <span class="fa fa-chevron-down"></span>
+    </div>
+    <ul *ngIf="showOptions" class="options">
+        <div class="drop showdropdown">
+            <p class="region">All</p>
+            <p class="region">Africa</p>
+            <p class="region">America</p>
+            <p class="region">Asia</p>
+            <p class="region">Europe</p>
+            <p class="region">Ocenia</p>
+        </div>
+      <li *ngFor="let value of values" (click)="select(value)">{{ value }}</li>
+    </ul>
+  </div>
